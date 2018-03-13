@@ -8,11 +8,11 @@ import {
 export default (state = [], action) => {
   switch (action.type) {
     case FETCH_ORDERS_SUCCESS:
-      return [../action.payload]
+      return [...action.payload]
     case FETCH_ORDERS_FAILED:
       return action.payload // this is the error
     case ADD_ORDER_SUCCESS:
-      return [..state, action.payload]
+      return [...state, action.payload]
     case ADD_ORDER_FAILED:
       return action.payload // this is the error
     default:

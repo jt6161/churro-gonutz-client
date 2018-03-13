@@ -5,6 +5,6 @@ import thunk from 'redux-thunk'
 
 const rootReducer = combineReducers({ products, orders })
 
-export default 9  => {
+export default ()  => {
   return createStore(rootReducer, applyMiddleware(thunk))
 }

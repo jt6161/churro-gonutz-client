@@ -9,7 +9,7 @@ const BASE_URL = `http://localhost:8000/`
 export const fetchOrders = () => {
   return async (dispatch) => {
     try {
-      let response - await fetch(`${BASE_URL}/orders`)
+      let response = await fetch(`${BASE_URL}/orders`)
       let orders = await response.json()
       dispatch({
         type: FETCH_ORDERS_SUCCESS,
@@ -27,7 +27,7 @@ export const fetchOrders = () => {
 export const addOrder = newOrder => {
   return async dispatch => {
     try {
-      let response - await fetch(`${BASE_URL}/orders`, {
+      let response = await fetch(`${BASE_URL}/orders`, {
         method: 'post',
         body: JSON.stringify(newOrder),
         headers: {

@@ -3,7 +3,7 @@ export const FETCH_PRODUCT_FAILED = 'FETCH_PRODUCT_FAILED'
 
 const BASE_URL = `http://localhost:8000/`
 
-export const fetchProducts = ( => {
+export const fetchProducts = () => {
   return async (dispatch) => {
     try {
       let response = await fetch(`${BASE_URL}/products`)
@@ -19,4 +19,4 @@ export const fetchProducts = ( => {
       })
     }
   }
-})
+}
