@@ -1,21 +1,30 @@
-import React, { Component } from 'react';
-import { Button } from 'reactstrap';
+import React from 'react';
 import './App.css';
 import Header from './components/Header'
 // import Products from './components/Products'
 import Product from './components/Product'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <h1>client side</h1>
-        <Product />
-        {/* <Products /> */}
-      </div>
-    );
-  }
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect
+} from 'react-router-dom'
+
+export const App = () => { 
+    return <div className="App">
+        <Router>
+          <div>
+            <Header />
+            <h1>Product</h1>
+            <div className="container">
+              {/* <Route exact path="/" component={Home} />
+              <Route path="/products" component={Products} /> */}
+              <Route path="/product" component={Product} />
+              {/* <Route path="/cart" component={Cart} /> */}
+            </div>
+          </div>
+        </Router>
+      </div>;
 }
 
 export default App;
