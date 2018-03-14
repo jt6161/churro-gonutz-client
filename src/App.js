@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Home from "./components/Home"
 import Header from './components/Header'
-// import Products from './components/Products'
-import Product from './components/Product'
+import Products from './components/Products'
 
 import {
   BrowserRouter as Router,
@@ -15,12 +15,11 @@ export const App = () => {
         <Router>
           <div>
             <Header />
-            <h1>Product</h1>
-            <div className="container">
-              {/* <Route exact path="/" component={Home} />
-              <Route path="/products" component={Products} /> */}
-              <Route path="/product" component={Product} />
-              {/* <Route path="/cart" component={Cart} /> */}
+            <h1></h1>
+            <div className="container">           
+                <Route exact path="/" component={Home} />
+                <Route path="/products" component={Products} />
+                {/* <Route path="/cart" component={Cart} /> */}            
             </div>
           </div>
         </Router>

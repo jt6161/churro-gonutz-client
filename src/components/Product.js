@@ -3,19 +3,20 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 const Product = (props) => {
-  return (
-    <div>
+
+console.log("product", props);
+
+  return <div className="container">
       <Card>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+        <CardImg top width="100%" src={props.product.img_url} />
         <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button>Button</Button>
+          <CardTitle>Name:{props.product.name}</CardTitle>
+          <CardSubtitle>Price:{props.product.price}</CardSubtitle>
+          <CardText>Description:{props.product.description}</CardText>
+          <Button color="primary">Add to Cart</Button>
         </CardBody>
       </Card>
     </div>
-  );
-};
+}
 
 export default Product;

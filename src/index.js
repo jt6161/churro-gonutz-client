@@ -15,7 +15,7 @@ newStore.dispatch(fetchOrders())
 
 ReactDOM.render(
   <Provider store={newStore}>
-  <App />
+    <App />
   </Provider>,
   document.getElementById('root')
 );

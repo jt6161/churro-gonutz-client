@@ -4,7 +4,7 @@ export const FETCH_ORDERS_FAILED = 'FETCH_ORDERS_FAILED'
 export const ADD_ORDER_SUCCESS = 'ADD_ORDER_SUCCESS'
 export const ADD_ORDER_FAILED = 'ADD_ORDER_FAILED'
 
-const BASE_URL = `http://localhost:8000/`
+const BASE_URL = `http://localhost:8000`
 
 export const fetchOrders = () => {
   return async (dispatch) => {

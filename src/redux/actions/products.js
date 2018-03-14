@@ -1,7 +1,7 @@
 export const FETCH_PRODUCT_SUCCESS = 'FETCH_PRODUCT_SUCCESS'
 export const FETCH_PRODUCT_FAILED = 'FETCH_PRODUCT_FAILED'
 
-const BASE_URL = `http://localhost:8000/`
+const BASE_URL = `http://localhost:8000`
 
 export const fetchProducts = () => {
   return async (dispatch) => {
