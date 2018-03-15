@@ -12,7 +12,11 @@ import {
 const Order = (props) => {
 
 console.log("order", props);
-
+  let orderedItemsList = props.order.ordered_items.map(item => {
+    return (
+      <div>{item.name}</div>
+    )
+  })
   return <div className="container">
           <Card>
             <CardBody>
@@ -21,7 +25,7 @@ console.log("order", props);
                 Customer Name: {props.order.order_details.cust_name}
               </CardTitle>
               <CardTitle>
-                Ordered Products: {props.order.order_details.ordered_items}
+                Ordered Products: {orderedItemsList}
               </CardTitle>
             </CardBody>
           </Card>
