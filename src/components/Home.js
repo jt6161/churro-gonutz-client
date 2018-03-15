@@ -23,7 +23,7 @@ const Home = () => {
           </email>
         </p>
         <p className="lead">
-          <Button href="/Products" color="primary">
+          <Button href="/Products" color="primary">    
             Browse Products
           </Button>
         </p>
