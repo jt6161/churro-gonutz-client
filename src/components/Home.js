@@ -14,6 +14,9 @@ const Home = () => {
             <Button href="/Products" color="primary">Products</Button>
           </p>
         </Jumbotron>
+       
+          {/* {Gallery} */}
+       
       </div>
   )
 }
