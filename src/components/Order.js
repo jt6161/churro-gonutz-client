@@ -17,8 +17,7 @@ console.log("order", props);
     <Card>
       <CardBody>
         <CardTitle>Order number: {props.order.id}</CardTitle>
-        <CardTitle>Name: {props.order.name}</CardTitle>
-        <CardSubtitle>Price: {props.order.price}</CardSubtitle>
+        <CardTitle>Name: {props.order.cust_name}</CardTitle>
       </CardBody>
     </Card>
   </div>
