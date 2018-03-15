@@ -11,7 +11,7 @@ console.log("product", props);
         <CardImg top width="100%" src={props.product.img_url} />
         <CardBody>
           <CardTitle>Name: {props.product.name}</CardTitle>
-          <CardSubtitle>Price: { props.product.price}</CardSubtitle>
+          <CardSubtitle>Price: {props.product.price}</CardSubtitle>
           <CardText>Description: {props.product.description}</CardText>
           <Button color="primary">Add to Cart</Button>
         </CardBody>

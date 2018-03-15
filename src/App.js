@@ -3,6 +3,9 @@ import './App.css'
 import Home from "./components/Home"
 import Header from './components/Header'
 import Products from './components/Products'
+// import Order from './components/Order'
+import Orders from './components/Orders'
+
 
 import {
   BrowserRouter as Router,
@@ -10,16 +13,18 @@ import {
   Redirect
 } from 'react-router-dom'
 
-export const App = () => { 
+const App = () => {
     return <div className="App">
         <Router>
           <div>
             <Header />
-            <h1></h1>
-            <div className="container">           
+            <div className="container">
+              <img width="100%" src='../churro_gonutz_logo.png'></img>
                 <Route exact path="/" component={Home} />
                 <Route path="/products" component={Products} />
-                {/* <Route path="/cart" component={Cart} /> */}            
+                {/* <Route path="/order" component={Order} /> */}
+                {/* <Route path="/cart" component={Cart} /> */}
+                <Route path="/orders" component={Orders} />
             </div>
           </div>
         </Router>

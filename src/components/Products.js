@@ -1,13 +1,15 @@
 import React from "react"
 import { connect } from "react-redux"
-import { CardDeck } from "reactstrap"
+import { CardDeck, Card } from "reactstrap"
 import Product from './Product'
+
+
 
 const Products = props => {
   let productList = props.products.map(product => <Product key={product.id} product={product}/> )
   return (
     <CardDeck>
-      {productList}
+      <Card>{productList}</Card>
     </CardDeck>
   );
 };
