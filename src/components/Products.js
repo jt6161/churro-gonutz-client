@@ -14,8 +14,6 @@ const Products = props => {
             </Card>
           </CardDeck>
         </CardColumns>
-
-     
 };
 
 const mapStateToProps = state => ({

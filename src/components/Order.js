@@ -14,13 +14,17 @@ const Order = (props) => {
 console.log("order", props);
 
   return <div className="container">
-    <Card>
-      <CardBody>
-        <CardTitle>Order number: {props.order.id}</CardTitle>
-        <CardTitle>Name: {props.order.cust_name}</CardTitle>
-      </CardBody>
-    </Card>
-  </div>
+          <Card>
+            <CardBody>
+              <CardTitle>Order number: {props.order.order_details.id}</CardTitle>
+              <CardTitle>
+                Customer Name: {props.order.order_details.cust_name}
+              </CardTitle>
+              <CardTitle>
+                Ordered Products: {props.order.order_details.ordered_items}
+              </CardTitle>
+            </CardBody>
+          </Card>
+        </div>;
 }
-
 export default Order;

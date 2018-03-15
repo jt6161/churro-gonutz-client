@@ -3,7 +3,6 @@ import './App.css'
 import Home from "./components/Home"
 import Header from './components/Header'
 import Products from './components/Products'
-// import Order from './components/Order'
 import Orders from './components/Orders'
 
 
@@ -22,8 +21,6 @@ const App = () => {
               <img width="100%" src='../churro_gonutz_logo.png'></img>
                 <Route exact path="/" component={Home} />
                 <Route path="/products" component={Products} />
-                {/* <Route path="/order" component={Order} /> */}
-                {/* <Route path="/cart" component={Cart} /> */}
                 <Route path="/orders" component={Orders} />
             </div>
           </div>
