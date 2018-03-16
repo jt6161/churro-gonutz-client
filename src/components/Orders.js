@@ -1,14 +1,16 @@
 import React from "react"
 import { connect } from "react-redux"
-import { CardDeck, Card } from "reactstrap"
+import { CardDeck, Card, CardColumns, Col } from "reactstrap"
 import Order from './Order'
 
 const Orders = props => {
   let orderList = props.orders.map(order => <Order key={order.id} order={order}/> )
   return (
-    <CardDeck>
-      <Card>{orderList}</Card>
-    </CardDeck>
+    <div align="center">
+        <CardDeck>
+          <Card>{orderList}</Card>
+        </CardDeck>
+    </div>
   );
 };
 

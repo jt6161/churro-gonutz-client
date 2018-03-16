@@ -1,9 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
-import { CardDeck, CardBodyCard, Card, CardColumns, CardBody } from "reactstrap"
+import { CardDeck, Card, CardColumns, CardBody } from "reactstrap"
 import Product from './Product'
-
-
 
 const Products = props => {
   let productList = props.products.map(product => <Product key={product.id} product={product}/> )

@@ -9,7 +9,7 @@ import Orders from './components/Orders'
 import {
   BrowserRouter as Router,
   Route,
-  Redirect
+  // Redirect
 } from 'react-router-dom'
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
           <div>
             <Header />
             <div className="container">
-              <img width="100%" src='../churro_gonutz_logo.png'></img>
+              <img width="100%" alt='Churro GoNutz Logo' src='../churro_gonutz_logo.png'></img>
                 <Route exact path="/" component={Home} />
                 <Route path="/products" component={Products} />
                 <Route path="/orders" component={Orders} />

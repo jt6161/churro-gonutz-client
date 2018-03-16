@@ -1,22 +1,17 @@
 import React from 'react';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink
+ } from 'reactstrap';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
   }
- 
+
   render() {
     return (
       <div>
@@ -29,7 +24,7 @@ class Header extends React.Component {
               <NavItem>
                 <NavLink href="/Orders">My Churro Cart</NavLink>
               </NavItem>
-            </Nav>          
+            </Nav>
         </Navbar>
       </div>
     );
